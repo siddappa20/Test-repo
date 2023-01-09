@@ -32,7 +32,7 @@ public class EmpController {
 	@GetMapping("/empByName")
 	public ResponseEntity<EmpResponse> getEmp(@RequestParam String name) {
 		
-		logger.debug("get emp details by name:{} ",name);
+		logger.debug(" get emp details by name:{} ",name);
 		
 			
 		Emp emp = empService.getEmpByName(name);
